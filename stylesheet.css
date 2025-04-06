@@ -1,3 +1,15 @@
+table {
+    border-collapse: collapse; /* 테두리가 유지되도록 설정 */
+    border-spacing: 0; /* 불필요한 간격 제거 */
+}
+
+
+.popup {
+    position: absolute; 
+
+}
+
+
 tr
 	{mso-height-source:auto;
 	mso-ruby-visibility:none;}

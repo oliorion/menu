@@ -64,22 +64,41 @@
 
 
     <script>
-        function showPopup(element) {
+        function showPopup( element) {
             
             var folderName = document.querySelector(".tab.active")?.innerText.trim(); // 클릭한 탭 이름을 폴더명으로 사용
             var itemName = element.innerText.trim();
     
             //imgElement.src =  './' +folderName + '/' + itemName + '.jpg'; // 파일 이름 동적 생성
             //imgElement.style.display = 'block';
-            
+            //position: absolute;
+
+
             document.getElementById('popup-img').src = './' +folderName + '/' + itemName + '.jpg'; // 파일 이름 동적 생성
             document.querySelector('.popup').style.display = 'block';
             document.querySelector('.overlay').style.display = 'block';
+            
+
+            // var popup = document.querySelector('.popup');
+            // var overlay = document.querySelector('.overlay');
+
+            // popup.style.position = 'absolute';
+            // popup.style.left = (event.pageX - popup.offsetWidth) + 'px';
+            // popup.style.top = event.pageY + 'px';
+
+
         }
+
+
 
         function hidePopup() {
             document.querySelector('.popup').style.display = 'none';
             document.querySelector('.overlay').style.display = 'none';
+
+
+            document.querySelector('.line').style.display = 'block';
+
+
         }
     </script>
 
@@ -87,10 +106,10 @@
 
 
     <!-- 탭 콘텐츠 -->
-    <div id="STARTERS" class="content active">
+    <div id="STARTERS" class="content active" >
         <h1>STARTERS</h1>
         <table border=0 cellpadding=0 cellspacing=0 width=1844 style='border-collapse:
-    collapse;table-layout:fixed;width:1382pt'>
+    collapse;table-layout:fixed;width:1382pt' >
     <col width=91 style='width:68pt'>
     <col width=316 style='mso-width-source:userset;mso-width-alt:11235;width:237pt'>
     <col width=59 style='mso-width-source:userset;mso-width-alt:2104;width:44pt'>
